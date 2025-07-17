@@ -21,7 +21,8 @@ class TestMathUtils(unittest.TestCase):
             divide(5, 0)
 
     #failing unit test to do
-    
+    def test_fail_always(self):
+        self.assertEqual(1, 2)
 
 if __name__ == '__main__':
     unittest.main()
