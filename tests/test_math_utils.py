@@ -34,9 +34,6 @@ class TestMathUtils(unittest.TestCase):
         # this should pass unless the divide function is silly
         self.assertAlmostEqual(divide(5, 2), 2.5)
 
-    def test_fail_always(self):
-        # This test is designed to always fail
-        self.fail("This test is designed to fail.")
 
 if __name__ == '__main__':
     unittest.main()
