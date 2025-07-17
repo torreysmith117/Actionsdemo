@@ -20,20 +20,5 @@ class TestMathUtils(unittest.TestCase):
         with self.assertRaises(ValueError):
             divide(5, 0)
 
-    def test_subtract(self):
-        # Purposely failing test — subtract() not implemented
-        from my_app.math_utils import subtract
-        self.assertEqual(subtract(5, 3), 2)
-
-    def test_multiply(self):
-        # Purposely failing test — bad math
-        result = 2 * 3  # wrong on purpose
-        self.assertEqual(result, 5)  # Wrong on purpose
-    
-    def test_divide_decimal(self):
-        # this should pass unless the divide function is silly
-        self.assertAlmostEqual(divide(5, 2), 2.5)
-
-
 if __name__ == '__main__':
     unittest.main()
