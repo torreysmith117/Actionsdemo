@@ -27,8 +27,16 @@ class TestMathUtils(unittest.TestCase):
 
     def test_multiply(self):
         # Purposely failing test — bad math
-        result = 2 * 3  # even if you implement this later, it should fail intentionally
+        result = 2 * 3  # wrong on purpose
         self.assertEqual(result, 5)  # Wrong on purpose
+    
+    def test_divide_decimal(self):
+        # this should pass unless the divide function is silly
+        self.assertAlmostEqual(divide(5, 2), 2.5)
+
+    def test_fail_always(self):
+        # This test is designed to always fail
+        self.fail("This test is designed to fail.")
 
 if __name__ == '__main__':
     unittest.main()
